@@ -1,16 +1,21 @@
 let newPassword = "user1234";
+var characterLength = document.getElementById("characterlength").value;
 
 const allCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%^&*+=-@_".split('');
 
-function add2() {
-    return 3;
+function createPassword() {
+    return document.getElementById("characterlength").value;
 }
 
-function makePassword() {
-        document.getElementById("password").innerHTML = add2();
+function characterLengthChanged() {
+    let characterLength = document.getElementById("characterlength");
+    console.log(characterLength);
 }
 
-console.log(passwordLength);
+function showPassword() {
+        document.getElementById("password").innerHTML = createPassword();
+}
+
 // Math.floor(Math.random() * 10) gives number between 0 and 1
 /* <script type="text/javascript">  
 function getcube(){  

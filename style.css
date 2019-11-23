@@ -1,8 +1,13 @@
-.paral {
-    min-height: 600px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
+.sliverImage {
+    width: 100%;
 }
 
-.jumbotron{margin-bottom: 0;}
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.followHeight {
+    height: 100%;
+}
