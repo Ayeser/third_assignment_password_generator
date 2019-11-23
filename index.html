@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+      <a class="navbar-brand" href="#">Matthew Wester, Password Proctector</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Security<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link" href="#">Portfolio</a>
+       </div>
+      </div>
+    </nav>
+  
+    <header class="row justify-content-md-center">
+      <h1>Password Generator</h1>
+    </header>
+    <p id="practice"></p>
+
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+    <div class="col-sm-5">
+            <h2>Criteria for Password</h2>
+        <form>
+            Enter number of letters you would like in your password (between 8 and 128):<input type="text" id="number" name="number"/><br/>  
+      
+      <input type="checkbox" name="chtype1" value="Special"> Special Characters<br>
+      <input type="checkbox" name="chtype2" value="Numeric"> Numeric Characters<br>
+      <input type="checkbox" name="chtype3" value="Lowercase" checked> Lowercase Characters<br>
+      <input type="checkbox" name="chtype3" value="Uppercase"> Uppercase Characters<br>
+
+    </form> 
+    </div>
+    <div class="col-sm-7">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <textarea
+                readonly
+                id="password"
+                placeholder="Your Secure Password"
+                aria-label="Generated Password"
+              ></textarea>
+              <button id="generate" onclick="makePassword();">Generate Password</button>
+              <button id="copy">
+                Copy to Clipboard
+              </button> </div>
+          </div> 
+    
+    </div>
+  </div>
+</div>
+
+<div class="row jarallax view paral">
+    <img class="img-thumbnail jarallax paral" src="keyInHand.jpg" alt="Photo by CMDR Shane on Unsplash">
+  </div>
+
+<div class="container-fluid">
+<div class="row container-fluid">
+
+      <p>We take security very seriously here.</p>
+      </div>
+  </div>
+
+
+   
+    
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
