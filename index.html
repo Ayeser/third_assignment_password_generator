@@ -21,7 +21,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="index.html">Security<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link" href="#">Competitors</a>
         <a class="nav-item nav-link" href="#">Portfolio</a>
       </div>
     </div>
@@ -37,30 +37,29 @@
       <div class="col-sm-5">
         <h2>Criteria for Password</h2>
         <form>
-          Enter number of letters you would like in your password (between 8 and 128):<input type="text" value="" id="characterlength"
-            name="characterlength" /><br />
+          Enter number of letters you would like in your password (between 8 and 128):<input type="text" value=""
+            id="characterlength" /><br />
 
-          <input type="checkbox" name="chtype1" value="Special"> Special Characters<br>
-          <input type="checkbox" name="chtype2" value="Numeric"> Numeric Characters<br>
-          <input type="checkbox" name="chtype3" value="Lowercase" checked> Lowercase Characters<br>
-          <input type="checkbox" name="chtype3" value="Uppercase"> Uppercase Characters<br>
+          <input type="checkbox" id="chtype1" value=""> Special Characters<br>
+          <input type="checkbox" id="chtype2" value=""> Numeric Characters<br>
+          <input type="checkbox" id="chtype3" value=""> Lowercase Characters<br>
+          <input type="checkbox" id="chtype3" value=""> Uppercase Characters<br>
 
         </form>
       </div>
       <div class="col-sm-7">
         <div class="jumbotron row-sm-12 followHeight">
           <div class="col-sm-6 col-md-6 col-lg-6 float-left">
-            <textarea readonly id="password" placeholder="Your Secure Password"
+            <textarea readonly id="password" value="" placeholder="Your Secure Password"
               aria-label="Generated Password"></textarea>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-6 float-right">
-            <button id="generate" onclick="showPassword();">Generate Password</button>
-            <button id="scramble" onclick="scramble();">Scramble</button>
+            <button id="generate" onclick="generatePassword();">Generate Password</button>
+            <button id="scramble" onclick="scramblePassword();">Scramble Password</button>
             <button id="copy">Copy to Clipboard</button> </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 
   <div class="row view container-fluid">
