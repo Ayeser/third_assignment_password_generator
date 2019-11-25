@@ -12,19 +12,8 @@
 </head>
 
 <body class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
-    <a class="navbar-brand" href="#">MW's Password Proctectors</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="index.html">Security<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Competitors</a>
-        <a class="nav-item nav-link" href="#">Portfolio</a>
-      </div>
-    </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <a class="navbar-brand" href="index.html">MW's Password Proctectors</a>
   </nav>
 
   <header class="row">
@@ -48,7 +37,7 @@
         </form>
       </div>
       <div class="col-sm-7">
-        <div class="jumbotron row-sm-12 followHeight">
+        <div class="jumbotron row-sm-12 rightyTighty">
           <div class="col-sm-6 col-md-6 col-lg-6 float-left">
             <textarea readonly id="password" value="" placeholder="Your Secure Password"
               aria-label="Generated Password"></textarea>
@@ -56,24 +45,62 @@
           <div class="col-sm-6 col-md-6 col-lg-6 float-right">
             <button id="generate" onclick="generatePassword();">Generate Password</button><br>
             <button id="scramble" onclick="scramblePassword();">Scramble Password</button><br>
-            <button id="copy">Copy to Clipboard</button> </div>
+            <button id="copy" onclick="copyPassword()">Copy to Clipboard</button> </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row view container-fluid">
+  <div class="breaker"></div>
+  <div class="row view container-fluid centralLine">
+    <p>Scroll below to see more of our security products.</p>
     <img class="img-thumbnail sliverImage" src="rowKeys.jpg" alt="Photo by marcos mayer on Unsplash">
   </div>
 
   <div class="container-fluid">
-    <div class="row container-fluid">
+    <div class="row justify-content-md-center">
+      <h3>Other Security Services</h3>
+    </div>
+  </div>
 
-      <p>We take security very seriously here.</p>
+  <div class="row">
+    <div class="col-sm-4 leftyLoosy">
+      <div class="jumbotron row-sm-12">
+        <p class="extraTitles">Voice Recognition</p>
+        <textarea readonly id="voiceRecognition" value=""></textarea>
+      <div class="centralLine">
+        <button onclick="voice1();">"I love jumbotrons!"</button><br>
+        <button onclick="voice2();">"p1zz4 ppl 4 lyfe"</button><br>
+        <button onclick="voice3()">"I don't understand Javascript at all."</button>
+      </div>
+      <p>Leading edge security companies have made leaps and bounds in voice and facial recognition software. Give it a try above.</p>
     </div>
   </div>
 
 
+    <div class="col-sm-4 centralLine">
+      <div class="jumbotron row-sm-12">
+        <p class="extraTitles">Machine Learning</p>
+        <img class="smallPicture" src="robotLearning.jpg" alt="Photo by Alex Knight on Unsplash">
+  
+        <button id="generate" onclick="machineLearning();">Click to Connect with True Machine Learning</button><br>
+      </div>
+    </div>
+
+    <div class="col-sm-4 rightyTighty jumbotron">
+      <div class="row-sm-12">
+        <p class="extraTitles">Competitor Compare</p>
+        <textarea readonly id="competitorCompare" value=""></textarea>
+      <div class="centralLine">
+         <button onclick="dummyPassword();">Generate Password</button><br>
+        <button onclick="dummyScramble();">Scramble Password</button><br>
+        <button onclick="dummyCopy()">Copy to Clipboard</button>
+        <p>Here at MW's Password Protectors we believe in fair market competition. We believe so strongly in our product that we got permission from our leading competitor to link to their password generator below. Give it a try before deciding which company YOU will go with for your password generating needs.</p>
+        </div>
+    </div>
+  </div>
+</div>
+  
 
 
   <script type="text/javascript" src="scripts.js"></script>

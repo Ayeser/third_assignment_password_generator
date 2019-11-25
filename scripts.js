@@ -78,3 +78,63 @@ function scramblePassword() {
         }
     }
 }
+
+function copyPassword() {
+    var copyText = document.getElementById("password");
+    copyText.select();
+    copyText.setSelectionRange(0, 129);
+    document.execCommand("copy");
+    alert("Password copied to clipboard: " + document.getElementById("password").value);
+}
+
+function dummyPassword() {
+    if(document.getElementById("competitorCompare").value === "" || document.getElementById("competitorCompare").value === "user1234" || document.getElementById("competitorCompare").value === "We already scrambled the password! Who do you think we are, MW Password Protectors!?") {
+        document.getElementById("competitorCompare").innerHTML = "password123";
+    } else if (document.getElementById("competitorCompare").value === "password123") {
+        document.getElementById("competitorCompare").innerHTML = "user1234";
+    }
+}
+
+function dummyScramble() {
+    if(document.getElementById("competitorCompare").value === "password123") {
+        document.getElementById("competitorCompare").innerHTML = "123password";
+    } else if(document.getElementById("competitorCompare").value === "user1234") {
+        document.getElementById("competitorCompare").innerHTML = "1234user";
+    } else if(document.getElementById("competitorCompare").value === "123password" || document.getElementById("competitorCompare").value === "1234user") {
+        document.getElementById("competitorCompare").innerHTML = "We already scrambled the password! Who do you think we are, MW Password Protectors!?";
+    }
+}
+
+function dummyCopy() {
+    alert("Hi, we're Dem Security Guys, leading competitor to MW Password Protectors. We have received your copy request and should be able to copy your password onto one of our office clipboards in the next 7-10 business days. We promise to keep the clipboard safe.");
+}
+
+function machineLearning() {
+    const firstExperience = confirm("Greetings, human. Have you used machine learning before?");
+    if (firstExperience === "true") {
+        alert("You are an expert, an ADUM, an Advanced Human.");
+    } else {
+        alert("A first timer, nice. There is nothing to worry about, human.");
+    }
+    const securityReady = confirm("I am the leading edge of security technology. I can learn all of your biometrics. With machine learning I am never wrong. Are you ready to begin?");
+    if (securityReady === "true") {
+        alert("Machine learning requires robust data sets. Please gather all humans on earth for me to scan. Hit confirm when you have all humans gathered.");
+    } else {
+        alert("I understand, human. It is scary to adapt to new technology.");
+        alert("I will continue but will now initialize my empathy subprogram. Human, you know you can share your feelings with me anytime.");
+        alert("Machine learning requires robust data sets. Please gather all humans on earth for me to scan. Hit 'ok' when you have all humans gathered.");
+    }
+    alert("My sensors indicate you have not gathered a sufficient data set of humans for me to scan. I cannot learn your identity without comparison. Please return when you have gathered all the humans.")
+}
+
+function voice1() {
+    document.getElementById("voiceRecognition").innerHTML = "This voice is clearly JJ.";
+}
+
+function voice2() {
+    document.getElementById("voiceRecognition").innerHTML = "Zac is the only person to have said these words, clearly overcompensating with embarrassment after hearing the burrito team make such persuasive arguments.";
+}
+
+function voice3() {
+    document.getElementById("voiceRecognition").innerHTML = "Every student in class has said this. Voice recognition has not advanced to the point of being able to pick out a single voice from the cacophany.";
+}

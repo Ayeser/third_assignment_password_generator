@@ -1,5 +1,6 @@
 .sliverImage {
     width: 100%;
+    height: 10%;
 }
 
 h1 {
@@ -8,6 +9,49 @@ h1 {
     margin-right: auto;
 }
 
-.followHeight {
+button {
+    margin-bottom: 15px;
+}
+
+.jumbotron {
+    background-color:lightcoral;
+}
+
+.breaker { 
+    display: block;
+    margin: 15px 15px 15px 15px;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 10px;
+    border-color: lightcoral;
+}
+
+.centralLine {
+    text-align: center;
+    float: right;
+    justify-content: center;
+}
+
+.leftyLoosy {
+    float: left;
     height: 100%;
+}
+
+.rightyTighty {
+    float: right;
+    height: 100%;
+}
+
+.extraTitles {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: bold;
+    font-size: 30px;
+}
+
+.smallPicture {
+    height: 75px;
+    width: 100px;
+    margin-bottom: 15px;
 }
