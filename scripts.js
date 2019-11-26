@@ -110,15 +110,15 @@ function dummyCopy() {
 }
 
 function machineLearning() {
-    const firstExperience = confirm("Greetings, human. Have you used machine learning before?");
-    if (firstExperience === "true") {
+    let firstExperience = confirm("Greetings, human. Hit 'ok' if you have used machine learning before.");
+    if (firstExperience === true) {
         alert("You are an expert, an ADUM, an Advanced Human.");
     } else {
         alert("A first timer, nice. There is nothing to worry about, human.");
     }
     const securityReady = confirm("I am the leading edge of security technology. I can learn all of your biometrics. With machine learning I am never wrong. Are you ready to begin?");
-    if (securityReady === "true") {
-        alert("Machine learning requires robust data sets. Please gather all humans on earth for me to scan. Hit confirm when you have all humans gathered.");
+    if (securityReady === true) {
+        alert("Machine learning requires robust data sets. Please gather all humans on earth for me to scan. Hit 'ok' when you have all humans gathered.");
     } else {
         alert("I understand, human. It is scary to adapt to new technology.");
         alert("I will continue but will now initialize my empathy subprogram. Human, you know you can share your feelings with me anytime.");

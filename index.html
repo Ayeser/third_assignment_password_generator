@@ -12,19 +12,14 @@
 </head>
 
 <body class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger navbar-static-top">
     <a class="navbar-brand" href="index.html">MW's Password Proctectors</a>
   </nav>
 
-  <header class="row">
-    <h1>Password Generator</h1>
-  </header>
-  <p id="practice"></p>
-
   <div class="container-fluid">
-    <div class="row justify-content-md-center">
+    <div class="row">
       <div class="col-sm-5">
-        <h2>Criteria for Password</h2>
+          <h2>Criteria for Password</h2>
         <form>
           Enter number of letters you would like in your password (between 8 and 128):<input type="number" value=""
             id="characterlength" /><br />
@@ -38,6 +33,7 @@
       </div>
       <div class="col-sm-7">
         <div class="jumbotron row-sm-12 rightyTighty">
+            <header><h1>Password Generator</h1></header>
           <div class="col-sm-6 col-md-6 col-lg-6 float-left">
             <textarea readonly id="password" value="" placeholder="Your Secure Password"
               aria-label="Generated Password"></textarea>
@@ -51,10 +47,10 @@
     </div>
   </div>
 
-  <div class="breaker"></div>
+  <!-- <div class="breaker"></div> -->
   <div class="row view container-fluid centralLine">
     <p>Scroll below to see more of our security products.</p>
-    <img class="img-thumbnail sliverImage" src="rowKeys.jpg" alt="Photo by marcos mayer on Unsplash">
+  <img class="img-thumbnail sliverImage" src="rowKeys.jpg" alt="Photo by marcos mayer on Unsplash">
   </div>
 
   <div class="container-fluid">
@@ -95,7 +91,7 @@
          <button onclick="dummyPassword();">Generate Password</button><br>
         <button onclick="dummyScramble();">Scramble Password</button><br>
         <button onclick="dummyCopy()">Copy to Clipboard</button>
-        <p>Here at MW's Password Protectors we believe in fair market competition. We believe so strongly in our product that we got permission from our leading competitor to link to their password generator below. Give it a try before deciding which company YOU will go with for your password generating needs.</p>
+        <p>Here at MW's Password Protectors we believe in fair market competition. We believe so strongly in our product that we got permission from our leading competitor to link to their password generator above. Give it a try before deciding which company YOU will go with for your password generating needs.</p>
         </div>
     </div>
   </div>

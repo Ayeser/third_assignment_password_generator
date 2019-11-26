@@ -1,6 +1,15 @@
 .sliverImage {
     width: 100%;
-    height: 10%;
+    height: 200px;
+    border-color: #F13E2E;
+    border-width: 6px;
+    border-style: inset;
+    padding: 0px 0px 0px 0px;
+}
+
+.navbar {
+    background-image: linear-gradient(#BB2402, #F13E2E);
+    margin-right: 15px;
 }
 
 h1 {
@@ -14,16 +23,19 @@ button {
 }
 
 .jumbotron {
-    background-color:lightcoral;
+    background-image: linear-gradient( #F13E2E, #E1F12E);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 
 .breaker { 
     display: block;
-    margin: 15px 15px 15px 15px;
+    margin: 0px 15px 0px 0px;
     overflow: hidden;
-    border-style: inset;
+    border-style: outset;
     border-width: 10px;
-    border-color: lightcoral;
+    border-color: #F13E2E;
 }
 
 .centralLine {
